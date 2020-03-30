@@ -7,6 +7,7 @@ def my_all?(collection)
     return_values << yield collection[i]
     i += 1
   end
+  end
 end
 
 #my_all?(collection) {|i| i < collection.length}
