@@ -7,7 +7,11 @@ def my_all?(collection)
     return_values << yield(collection[i])
     i += 1
   end
-  return_values
+
+  if return_values.include?(false)
+    false
+  else
+    true
 end
 
 #my_all?(collection) {|i| i < collection.length}
