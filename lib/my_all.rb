@@ -8,3 +8,5 @@ def my_all?(collection)
   end
   collection
 end
+
+my_all?(collection) {|i| i < collection.length}
